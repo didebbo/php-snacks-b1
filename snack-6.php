@@ -73,7 +73,7 @@ $db = [
         </div>
         <div class="green">
             <ul>
-                <?php foreach ($db["teachers"] as $teacher) : ?>
+                <?php foreach ($db["pm"] as $teacher) : ?>
 
                     <?php foreach ($teacher as $value) : ?>
                         <li>
