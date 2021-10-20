@@ -74,16 +74,16 @@ $partite = [
             <li>Ospite</li>
             <li>Punteggio</li>
         </ul>
-        <?php for ($i = 0; $i < count($partite); $i++) { ?>
+        <?php foreach ($partite as $partita) { ?>
             <ul>
                 <li>
-                    <?= $partite[$i]["casa"] ?>
+                    <?= $partita["casa"] ?>
                 </li>
                 <li>
-                    <?= $partite[$i]["ospite"] ?>
+                    <?= $partita["ospite"] ?>
                 </li>
                 <li>
-                    <?= $partite[$i]["punteggio"] ?>
+                    <?= $partita["punteggio"] ?>
                 </li>
             </ul>
         <?php } ?>
