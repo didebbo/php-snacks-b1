@@ -77,13 +77,13 @@ $partite = [
         <?php for ($i = 0; $i < count($partite); $i++) { ?>
             <ul>
                 <li>
-                    <?php echo $partite[$i]["casa"]; ?>
+                    <?= $partite[$i]["casa"] ?>
                 </li>
                 <li>
-                    <?php echo $partite[$i]["ospite"]; ?>
+                    <?= $partite[$i]["ospite"] ?>
                 </li>
                 <li>
-                    <?php echo $partite[$i]["punteggio"]; ?>
+                    <?= $partite[$i]["punteggio"] ?>
                 </li>
             </ul>
         <?php } ?>
