@@ -37,6 +37,8 @@ $db = [
     <style>
         ul {
             list-style: none;
+            padding: 1em;
+            margin: 0;
         }
 
         .container {
