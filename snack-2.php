@@ -83,15 +83,15 @@ if (
     <form method="POST">
         <div>
             <label for="name">
-                <input type="text" name="name" id="name" require>
+                <input type="text" name="name" id="name" require placeholder="Nome...">
             </label>
             <label for="age">
-                <input type="number" name="age" id="age" require>
+                <input type="number" name="age" id="age" require placeholder="Età...">
             </label>
         </div>
         <div>
             <label for="email">
-                <input type="email" name="email" id="email" require>
+                <input type="email" name="email" id="email" require placeholder="Email...">
             </label>
             <button type="submit">Accedi</button>
         </div>
