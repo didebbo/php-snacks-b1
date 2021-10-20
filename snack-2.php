@@ -95,16 +95,16 @@ if (
             </label>
             <button type="submit">Accedi</button>
         </div>
-        <?php if ($person["name"] && $person["email"] && $person["age"]) : ?>
-            <div>
+        <div>
+            <?php if ($person["name"] && $person["email"] && $person["age"]) : ?>
                 <p>
                     <?php
                     if ($response) echo 'Accesso effettuato con successo!';
                     else echo 'Accesso negato!';
                     ?>
                 </p>
-            </div>
-        <?php endif ?>
+            <?php endif ?>
+        </div>
     </form>
 </body>
 
