@@ -21,13 +21,19 @@ $db = [
     ]
 ];
 
-foreach ($db["studenti"] as $studente) {
+function media($voti)
+{
     $media = 0;
     $divisore = 0;
-    foreach ($studente["voti"] as $voto) {
+    foreach ($voti as $voto) {
         $media += $voto;
         $divisore++;
     }
     $media /= $divisore;
-    echo $studente["nome"] . " " . $studente["cognome"] . " : " . $media . "<br>";
+    return $media;
+}
+
+foreach ($db["studenti"] as $studente) {
+
+    echo $studente["nome"] . " " . $studente["cognome"] . " : " . media($studente["voti"]) . "<br>";
 }
